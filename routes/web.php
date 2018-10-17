@@ -33,4 +33,4 @@ Route::get('tela','ActividadController@tela');
 Route::get('eventos','ActividadController@eventos');
 Route::get('taekwondo','ActividadController@taekwondo');
 
-// Route::resource('mail','MailController');
+Route::post('send','mailController@send');

@@ -1,21 +1,21 @@
    <section id="contact" class="map">
 <div class="container">
 	<h1 class="text-center">Formulario de Contacto</h1>
-	<form action="#" method="POST">
-
+	<form action="send" method="POST">
+		{{ csrf_field() }}
 		<div class="form-group">
 			<label for="nombre">Nombre</label>
-			<input type="text" class="form-control" id="nombre">
+			<input type="text" class="form-control" id="nombre" name="nombre">
 		</div>
 
 		<div class="form-group">
 			<label for="apellido">Apellido</label>
-			<input type="text" class="form-control" id="apellido">
+			<input type="text" class="form-control" id="apellido" name="apellido">
 		</div>
 
 	  <div class="form-group">
 	    <label for="email">e-mail</label>
-	    <input type="email" class="form-control" id="email">
+	    <input type="email" class="form-control" id="email" name="email">
 	  </div>
 
 	  <div class="form-group">
