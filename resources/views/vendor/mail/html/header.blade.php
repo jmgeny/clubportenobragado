@@ -1,7 +1,8 @@
 <tr>
     <td class="header">
         <a href="{{ $url }}">
-            {{ $slot }}
+            {{-- {{ $slot }} --}}
+            <p>Mail de Socio</p>
         </a>
     </td>
 </tr>

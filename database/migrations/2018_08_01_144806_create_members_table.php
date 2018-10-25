@@ -22,10 +22,10 @@ class CreateMembersTable extends Migration
             $table->date('nacimiento')->nullable();
             $table->date('ingreso')->nullable();
             $table->string('address')->nullable();
-            $table->string('city_id')->nullable();          
+            $table->unsignedInteger('city_id');          
             $table->string('phone')->nullable();
             $table->string('avatar')->nullable();
-            $table->string('estado')->nullable();
+            $table->boolean('estado');
             $table->timestamps();
         });
     }

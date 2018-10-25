@@ -14,9 +14,19 @@ class MemberController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $members = Member::orderBy('apellido','ASC')->paginate('5');
+        $name = $request->nombre;
+        $apell = $request->apellido;
+        $mail = $request->mail;
+        $estado = $request->estado;
+
+        $members = Member::orderBy('apellido','ASC')
+                    ->name($name)
+                    ->apell($apell)
+                    ->mail($mail)
+                    ->estado($estado)
+                    ->paginate('7');
 
         return view('member.index',compact('members'));
     }
@@ -57,7 +67,7 @@ class MemberController extends Controller
         // $member = Member::findOrFail($request->$socio->id);
         $socio->sports()->attach($request->sport_id);        
 
-        return redirect()->route('member.index')
+        return redirect()->back()
                          ->with('info','El Socio fue creado');
     }
 
@@ -122,11 +132,11 @@ class MemberController extends Controller
      */
     public function destroy($id)
     {
-        $socio = Member::find($id);
-        $socio->delete();
-        // $socio = Member::find($id);
-        // $socio->estado = 'I';
-        return back()->with('info','El Socio fue Eliminado');  
+        $socio = Member::findOrFail($id);
+        $socio->estado='0';
+        $socio->update();
+        
+        return back();  
     }
 
 }

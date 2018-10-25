@@ -7,6 +7,7 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Http\request;
+use Porteno\Member;
 
 class newMail extends Mailable
 {
@@ -29,7 +30,18 @@ class newMail extends Mailable
      */
     public function build(request $request)
     {
-        // return $this->markdown('email')->to('porteno.bragado@gmail.com');
+        // $socio = Member::where('mail', $request->email)->get();
+        // if ($socio)
+        // {
+        //     dd($request);
+        // } 
+        // else
+        // {
+        //     dd($socio);
+        // }
+        $socio = Member::firstOrCreate(['mail'=>$request->email, 'apellido'=>$request->apellido]);
+        $socio->save();
+// $users = DB::table('users')->where('votes', 100)->get();
         return $this->markdown('email',
             [   'msg'=>$request->mensaje,
                 'nombre'=>$request->nombre,

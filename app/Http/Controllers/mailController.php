@@ -11,5 +11,6 @@ class mailController extends Controller
         public function send() 
     {
 		 Mail::send(new newMail());
+		 return back();
     }
 }

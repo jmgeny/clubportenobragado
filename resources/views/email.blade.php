@@ -1,10 +1,11 @@
 @component('mail::message')
 # Introduction
+Marl de: {{ $nombre }}{{ $apellido }}
 
-@component('mail::button', ['url' => ''])
-Button Text
-@endcomponent
+Mensaje: {{ $msg }}
 
-Thanks,<br>
+Responderle a: {{ $email }}
+
+Gracias,<br>
 {{ config('app.name') }}
 @endcomponent

@@ -11,17 +11,19 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+// Route::get('/', function () {
+//     return view('index');
+// });
+
+Route::get('/','InicioController@index');
 
 Auth::routes();
 
 Route::get('/admin', 'HomeController@index')->name('admin');
 
-Route::resource('member','MemberController');
+Route::resource('admin/member','MemberController');
 
-Route::resource('activity','MemberSportController');
+// Route::resource('activity','MemberSportController');
 
 Route::get('patin','ActividadController@patin');
 Route::get('funcional','ActividadController@funcional');

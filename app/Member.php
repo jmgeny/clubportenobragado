@@ -20,4 +20,29 @@ class Member extends Model
         	return $this->belongsTo(City::class);
         }
 
+// Scope
+
+        public function scopeName($query, $name) 
+        {
+            if($name)
+                return $query->where('nombre','LIKE',"%$name%");
+        }
+
+        public function scopeApell($query, $apell) 
+        {
+            if($apell)
+                return $query->where('apellido','LIKE',"%$apell%");
+        }
+
+        public function scopeMail($query, $mail) 
+        {
+            if($mail)
+                return $query->where('mail','LIKE',"%$mail%");
+        }
+
+        public function scopeEstado($query, $estado)
+        {
+            if($estado)
+                return $query->where('estado','LIKE', "%$estado%");
+        }                
 }

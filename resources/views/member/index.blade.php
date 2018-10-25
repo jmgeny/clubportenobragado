@@ -3,70 +3,68 @@
 @section('title','Index')
 
 @section('content')
-<h1>index</h1>
-<a href="{{route('member.create') }}" class="btn btn-primary">Crear</a>
-<br>
+	<section class="container">
 
-@include('member.codigo.info')
-<table class="table">
-	<thead>
-		<tr>
-			<th>Apellido</th>
-			<th>Nombre</th>
-			<th>e-mail</th>
-			<th>Actividades</th>
-			<th>DNI</th>
-			<th>Teléfono</th>
-			<th>Nacimiento</th>
-			<th>Fecha ingreso</th>
-			<th>Domicilio</th>
-			<th>Ciudad</th>
-			<th>Edit</th>
-			<th>Ver</th>
-			{{-- <th>Borrar</th> --}}
-		</tr>
-	</thead>
-	<tbody>
-		@foreach($members as $member)
-		<tr>
-			<td>{{ $member->apellido }}</td>
-			<td>{{ $member->nombre }}</td>
-			<td>{{ $member->mail }}</td>
-			<td> 
-{{-- 				@if ($member->sports)
-					<select class="selSocios">
-						@foreach($member->sports as $sport)
-							<option value="{{ $sport->id }}">{{ $sport->nombre }}</option>
-						@endforeach 
-					</select>			
-				@endif  	 --}}
-				<ul>
-					@foreach($member->sports as $sport)
-						<li>{{ $sport->nombre }}</li>
-						<a href="{{ route('member.borrar') }}"></a>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="page-header">
+					<h1>Listado de socios</h1>
+						{!! Form::open(['url' => 'admin/member', 'method'=>'GET','class'=>'form-inline pull-right']) !!}
+						<div class="form-group">
+							{{ Form::text('nombre',null,['class'=>'form-control','placeholder'=>'Nombre']) }}
+						</div>
+						<div class="form-group">
+							{{ Form::text('apellido',null,['class'=>'form-control','placeholder'=>'Apellido']) }}
+						</div>
+						<div class="form-group">
+							{{ Form::text('mail',null,['class'=>'form-control','placeholder'=>'e-mail']) }}
+						</div>
+						<div class="form-group">
+							{{-- {{ Form::text('estado',null,['class'=>'form-control','placeholder'=>'estado']) }} --}}
+							{{ Form::select('estado',['1'=> 'Activo', '0'=>'todos' ], null, ['class'=>'form-control', 'placeholder'=> 'Estado']) }}
+						</div>						
+						<div class="form-group">
+							<button type="submit" class="btn btn-default">
+								<span class="glyphicon glyphicon-search">buscar</span>
+							</button>
+						</div>												
+						{!! Form::close() !!}
+				</div>
 
-					@endforeach
-				</ul>
-			</td>
-			<td>{{ $member->dni }}</td>
-			<td>{{ $member->phone }}</td>
-			<td>{{ $member->nacimiento }}</td>
-			<td>{{ $member->ingreso }}</td>
-			<td>{{ $member->address }}</td>
-			<td>{{ $member->city->name }}</td>
-			<td><a href="{{route('member.edit',$member->id) }}" class="btn btn-primary">Edit</a></td>
-			<td><a href="{{route('member.show',$member->id) }}" class="btn btn-primary">Ver</a></td>
-{{-- 			<td>
-			    <form action="{{ route('member.destroy',$member->id) }}" method="POST">
-	              {{ csrf_field() }}
-	              <input type="hidden" name="_method" value="DELETE">
-	              <button class="btn btn-danger">Borrar</button>
-	            </form>
-			</td> --}}
-		</tr>
-		@endforeach
-	</tbody>
-</table>
- 
-	{{ $members->links() }}
+			</div>
+		</div>
+		<div class="m-5">
+			<table class="table table-bordered">
+			    <thead>
+			      <tr>
+			        <th>Nombre</th>
+			        <th>Apellido</th>
+			        <th>Email</th>
+			        <th>DNI</th>
+			        <th>Estado</th>
+			        <th>Editar</th>
+			        <th>Eliminar</th>
+			      </tr>
+			    </thead>
+				<tbody>
+			    	@foreach($members as $member)
+				      <tr>
+				        <td>{{ $member->nombre }}</td>
+				        <td>{{ $member->apellido }}</td>
+				        <td>{{ $member->mail }}</td>
+				        <td>{{ $member->dni }}</td>
+				        <td>{{ $member->estado }}</td>
+				        <td>Editar</td>
+				        <td>
+			        		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-delete-{{ $member->id }}">Eliminar</button>
+				        </td> 
+				      </tr>
+				      @include('member.modal')
+			      	@endforeach
+				</tbody>
+			</table>
+		</div>		
+{{ $members->links() }}
+	</section>
+
 @endsection
