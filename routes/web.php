@@ -22,6 +22,7 @@ Auth::routes();
 Route::get('/admin', 'HomeController@index')->name('admin');
 
 Route::resource('admin/member','MemberController');
+Route::resource('admin/nota','NotaController');
 
 // Route::resource('activity','MemberSportController');
 

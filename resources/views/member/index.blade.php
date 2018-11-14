@@ -33,6 +33,7 @@
 
 			</div>
 		</div>
+
 		<div class="m-5">
 			<table class="table table-bordered">
 			    <thead>
@@ -42,6 +43,7 @@
 			        <th>Email</th>
 			        <th>DNI</th>
 			        <th>Estado</th>
+			        <th>Ver</th>
 			        <th>Editar</th>
 			        <th>Eliminar</th>
 			      </tr>
@@ -54,7 +56,8 @@
 				        <td>{{ $member->mail }}</td>
 				        <td>{{ $member->dni }}</td>
 				        <td>{{ $member->estado }}</td>
-				        <td>Editar</td>
+				        <td><a href="{{ route('member.show',$member->id) }}" class="btn btn-primary">Ver</a></td>
+				        <td><a href="{{route('member.edit',$member->id) }}" class="btn btn-primary">Edit</a></td>
 				        <td>
 			        		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-delete-{{ $member->id }}">Eliminar</button>
 				        </td> 

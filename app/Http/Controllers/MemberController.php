@@ -57,8 +57,9 @@ class MemberController extends Controller
         $socio->nacimiento     = $request->nacimiento;
         $socio->ingreso     = $request->ingreso;
         $socio->address     = $request->address;
-        $socio->city_id     = $request->city_id;
+        // $socio->city_id     = $request->city_id;
         $socio->estado     = $request->estado;
+        // $socio->estado = 1;
 
         $socio->mail     = $request->mail;
 
@@ -67,7 +68,7 @@ class MemberController extends Controller
         // $member = Member::findOrFail($request->$socio->id);
         $socio->sports()->attach($request->sport_id);        
 
-        return redirect()->back()
+        return redirect()->route('member.index')
                          ->with('info','El Socio fue creado');
     }
 

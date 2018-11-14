@@ -17,6 +17,7 @@
                     @endif
 
                     <a href="{{ route('member.index') }}" class="btn btn-primary">Socios</a>
+                    <a href="{{ route('nota.index') }}" class="btn btn-primary">Notas</a>
                 </div>
             </div>
         </div>

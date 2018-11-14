@@ -30,7 +30,15 @@
         <a class="dropdown-item" href="{{route('member.create') }}">Crear</a>
       </div>
     </li>
-  
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Notas
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="{{route('nota.index') }}">Ver</a>
+        <a class="dropdown-item" href="{{route('nota.create') }}">Nueva</a>
+      </div>
+    </li>  
 
     {{-- Conexion --}}
                                 <li class="nav-item dropdown">

@@ -39,7 +39,9 @@ class newMail extends Mailable
         // {
         //     dd($socio);
         // }
-        $socio = Member::firstOrCreate(['mail'=>$request->email, 'apellido'=>$request->apellido]);
+        $socio = Member::firstOrCreate(['mail'      =>$request->email, 
+                                        'apellido'  =>$request->apellido,
+                                        'nombre'    =>$request->nombre]);
         $socio->save();
 // $users = DB::table('users')->where('votes', 100)->get();
         return $this->markdown('email',

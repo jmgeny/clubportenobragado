@@ -87,11 +87,6 @@
             <img class="img-fluid" src="{{ asset('/img/sponsor/logo-ge.png') }}" alt="">
           </a>
         </div>        
-        <div class="col-md-2 col-sm-4 mb-4">
-          <a href="#">
-            <img class="img-fluid" src="{{ asset('/img/sponsor/logo-bridgestone.png') }}" alt="">
-          </a>
-        </div>        
     </div>
       </div>
     </section>

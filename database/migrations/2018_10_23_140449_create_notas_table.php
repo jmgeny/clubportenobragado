@@ -19,6 +19,8 @@ class CreateNotasTable extends Migration
             $table->mediumText('descripcion');
             $table->text('desarrollo');
             $table->date('fecha');
+            $table->string('avatar');
+            $table->boolean('state');
             $table->timestamps();
         });
     }

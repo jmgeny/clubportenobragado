@@ -1,0 +1,17 @@
+@extends('layouts.admin')
+
+@section('title','Edit Notas')
+
+@section('content')
+<section class="container">
+	<h3>Crear Nota
+		<a href="{{ url('admin/nota') }}" class="btn btn-primary pull-right">Listado</a>
+	</h3> 
+
+	{!! Form::open(['route' => 'nota.store']) !!}
+	   @include('nota.form')
+	{!! Form::close() !!}
+
+</section>
+
+@endsection
