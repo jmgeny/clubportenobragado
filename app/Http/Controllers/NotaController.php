@@ -44,6 +44,20 @@ class NotaController extends Controller
         $nota->fecha = $request->fecha;
         $nota->state = $request->state;
 
+//imagen
+        if($request->file('avatar')) {
+
+            // Necesito el archivo en una variable esta vez
+            $file = $request->file("avatar");
+            // Armo un nombre único para este archivo
+            $name = $request->id . $request->fecha . "." . $file->extension();
+            // carpeta en la que voy a guardar la imagen
+            $folder = "notas";
+
+            $path = $file->storeAs($folder, $name);
+            $nota->avatar = $path;
+        }
+
         $nota->save();
 
         return redirect()->route('nota.index');
@@ -90,6 +104,20 @@ class NotaController extends Controller
         $nota->desarrollo = $request->desarrollo;
         $nota->fecha = $request->fecha;
         $nota->state = $request->state;
+
+//imagen
+        if($request->file('avatar')) {
+
+            // Necesito el archivo en una variable esta vez
+            $file = $request->file("avatar");
+            // Armo un nombre único para este archivo
+            $name = $request->id . $request->fecha . "." . $file->extension();
+            // carpeta en la que voy a guardar la imagen
+            $folder = "notas";
+
+            $path = $file->storeAs($folder, $name);
+            $nota->avatar = $path;
+        }
 
         $nota->save();
 

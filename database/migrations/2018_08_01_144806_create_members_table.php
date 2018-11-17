@@ -24,7 +24,7 @@ class CreateMembersTable extends Migration
             $table->string('address')->nullable();
             $table->unsignedInteger('city_id');          
             $table->string('phone')->nullable();
-            $table->string('avatar')->nullable();
+            $table->string('avatar')->default('default.gif');
             $table->boolean('estado');
             $table->timestamps();
         });

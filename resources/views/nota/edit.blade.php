@@ -8,7 +8,7 @@
 		<a href="{{ url('admin/nota') }}" class="btn btn-primary pull-right">Listado</a>
 	</h3> 
 
-	{!! Form::model($nota,['route' => ['nota.update',$nota->id], 'method'=>'PUT' ]) !!}
+	{!! Form::model($nota,['route' => ['nota.update',$nota->id], 'method'=>'PUT','files' =>'true' ]) !!}
 	   @include('nota.form')
 	{!! Form::close() !!}
 

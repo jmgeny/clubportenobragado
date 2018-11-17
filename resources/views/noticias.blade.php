@@ -10,10 +10,10 @@
                  <h3>{{ $nota->titulo }}</h3>
               <span class="caption">
                 <span class="caption-content">
-                  {{ $nota->descripcion }}
+                  <strong>{{ $nota->descripcion }}</strong>
                 </span>
               </span>
-              <img class="img-fluid" src="img/portfolio700x467.jpg" alt="">
+              <img class="img-fluid" src="{{ Storage::url($nota->avatar) }}" alt="">
             </a>
           </div>
           @include('modal')

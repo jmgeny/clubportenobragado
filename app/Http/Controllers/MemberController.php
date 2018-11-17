@@ -4,6 +4,7 @@ namespace Porteno\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Porteno\Member;
+use Illuminate\Support\Facades\Storage;
 // use Porteno\Member_sport;
 use Porteno\Sport;
 
@@ -57,11 +58,23 @@ class MemberController extends Controller
         $socio->nacimiento     = $request->nacimiento;
         $socio->ingreso     = $request->ingreso;
         $socio->address     = $request->address;
-        // $socio->city_id     = $request->city_id;
+        $socio->city_id     = $request->city_id;
         $socio->estado     = $request->estado;
-        // $socio->estado = 1;
-
         $socio->mail     = $request->mail;
+
+//imagen
+        if($request->file('avatar')) {
+
+            // Necesito el archivo en una variable esta vez
+            $file = $request->file("avatar");
+            // Armo un nombre único para este archivo
+            $name = $request->apellido . $request->nombre . "." . $file->extension();
+            // carpeta en la que voy a guardar la imagen
+            $folder = "image";
+
+            $path = $file->storeAs($folder, $name);
+            $socio->avatar = $path;
+        }          
 
         $socio->save();
 
@@ -109,16 +122,31 @@ class MemberController extends Controller
     {
         $member = Member::find($id);
 
-        $member->nombre   = $request->nombre;
-        $member->apellido = $request->apellido;
-        $member->mail     = $request->mail;
-        $member->dni     = $request->dni;
-        $member->phone     = $request->phone;
-        $member->nacimiento     = $request->nacimiento;
-        $member->ingreso     = $request->ingreso;
-        $member->address     = $request->address;
-        $member->city_id     = $request->city_id;
-        $member->estado = $request->estado;
+        $member->nombre     = $request->nombre;
+        $member->apellido   = $request->apellido;
+        $member->mail       = $request->mail;
+        $member->dni        = $request->dni;
+        $member->phone      = $request->phone;
+        $member->nacimiento = $request->nacimiento;
+        $member->ingreso    = $request->ingreso;
+        $member->address    = $request->address;
+        $member->city_id    = $request->city_id;
+        $member->estado     = $request->estado;
+
+//imagen
+        if($request->file('avatar')) {
+
+            // Necesito el archivo en una variable esta vez
+            $file = $request->file("avatar");
+            // Armo un nombre único para este archivo
+            $name = $request->apellido . $request->nombre . "." . $file->extension();
+            // carpeta en la que voy a guardar la imagen
+            $folder = "avatars";
+
+            $path = $file->storeAs($folder, $name);
+            $member->avatar = $path;
+        }         
+
         $member->save();
 
         return redirect()->route('member.index')

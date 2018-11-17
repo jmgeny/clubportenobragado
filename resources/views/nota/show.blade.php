@@ -9,6 +9,7 @@
 		<div class="col-md-12">
 			<div class="card">
   				<div class="card-header">{{ $nota->titulo }}</div>
+          <img src="{{ Storage::url($nota->avatar) }}" alt="img">
   				<div class="card-body">
   					<p>{{ $nota->descripcion }}</p>
   					<p>{{ $nota->desarrollo }}</p>

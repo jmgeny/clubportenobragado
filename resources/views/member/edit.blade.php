@@ -5,7 +5,7 @@
 @section('content')
 	<section class="container">
 		<h1>Edit Member</h1>
-		{!! Form::model($member,['route' => ['member.update',$member->id], 'method'=>'PUT' ]) !!}
+		{!! Form::model($member,['route' => ['member.update',$member->id], 'method'=>'PUT','files'=>'true' ]) !!}
 			@include('member.form')
 		{!! Form::close() !!}
 	</section>

@@ -1,4 +1,9 @@
   <div class="form-group">
+    {!! Form::label('avatar', 'Foto') !!}
+    {!! Form::file('avatar') !!}
+  </div>
+  
+  <div class="form-group">
     {!! Form::label('titulo', 'Titulo') !!}
     {!! Form::text('titulo', null, ['class'=> 'form-control']) !!}
   </div>
@@ -18,10 +23,6 @@
     {!! Form::date('fecha', null, ['class'=> 'form-control']) !!}
   </div>
 
-  <div class="form-group">
-    {!! Form::label('avatar', 'Foto') !!}
-    {!! Form::file('avatar') !!}
-  </div>
 
   <div class="form-group">
     {!! Form::label('state', 'Estado') !!}
