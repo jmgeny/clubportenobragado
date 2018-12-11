@@ -30,35 +30,8 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
         <div class="my-auto">
           <h2 class="mb-5">Horarios</h2>
-          <table class="table table-striped">
-            <thead class="thead-dark">
-              <th>Lunes</th>
-              <th>Martes</th>
-              <th>Miércoles</th>
-              <th>Jueves</th>
-              <th>Viernes</th>
-              <th>Edad</th>
-            </thead>
-            <tbody>
-              <tr>
-                <td>16 a 17</td>
-                <td></td>
-                <td>16 a 17</td>
-                <td></td>
-                <td></td>
-                <td>Adultos</td>                                            
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="fotos">
-        <div class="my-auto">
-          <h2 class="mb-5">Fotos</h2>
-          <img src="{{ asset('img/adultos1.jpg') }}" alt="" class="img-thumbnail">
-          <img src="{{ asset('img/adultos2.jpg') }}" alt="" class="img-thumbnail">
-          <img src="{{ asset('img/adultos3.jpg') }}" alt="" class="img-thumbnail">
-          <img src="{{ asset('img/adultos4.jpg') }}" alt="" class="img-thumbnail">
+          <h3>Realiza la consulta</h3>
+          @include('contact')          
         </div>
       </section>
     </div>

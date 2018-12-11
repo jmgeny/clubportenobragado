@@ -1,6 +1,6 @@
    <section id="contact" class="map">
 <div class="container">
-	<h1 class="text-center">Formulario de Contacto</h1>
+	@include('error')
 	<form action="send" method="POST">
 		{{ csrf_field() }}
 		<div class="form-group">

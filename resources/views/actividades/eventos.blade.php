@@ -51,21 +51,9 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
         <div class="my-auto">
-          <h2 class="mb-5">Consultar Horarios en el Club</h2>
+          <h3>Realiza la consulta</h3>
+          @include('contact')          
         </div>
       </section>
-
-{{--       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="fotos">
-        <div class="my-auto">
-          <img src="{{ asset('img/fotos.jpg') }}" alt="" class="img-thumbnail">
-          <img src="{{ asset('img/fotos.jpg') }}" alt="" class="img-thumbnail">
-          <img src="{{ asset('img/fotos.jpg') }}" alt="" class="img-thumbnail">
-          <img src="{{ asset('img/fotos.jpg') }}" alt="" class="img-thumbnail">
-          <img src="{{ asset('img/fotos.jpg') }}" alt="" class="img-thumbnail">
-          <img src="{{ asset('img/fotos.jpg') }}" alt="" class="img-thumbnail">
-          <img src="{{ asset('img/fotos.jpg') }}" alt="" class="img-thumbnail">
-          <img src="{{ asset('img/fotos.jpg') }}" alt="" class="img-thumbnail">
-        </div>
-      </section> --}}
     </div>
 @endsection

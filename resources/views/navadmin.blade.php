@@ -26,7 +26,7 @@
         Socios
       </a>
       <div class="dropdown-menu">
-        <a class="dropdown-item" href="{{route('member.index') }}">Ver</a>
+        <a class="dropdown-item" href="{{route('member.index') }}">Listar</a>
         <a class="dropdown-item" href="{{route('member.create') }}">Crear</a>
       </div>
     </li>

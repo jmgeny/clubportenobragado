@@ -6,10 +6,11 @@
 	<section class="container">
 		<h1>Nota: {{ $nota->titulo }}<a href="{{ url('admin/nota') }}" class="btn btn-primary pull-right">Listado</a></h1>
 	<div class="row">
-		<div class="col-md-12">
+  <div class="col-md-2"></div>
+		<div class="col-md-8">
 			<div class="card">
   				<div class="card-header">{{ $nota->titulo }}</div>
-          <img src="{{ Storage::url($nota->avatar) }}" alt="img">
+          <img src="{{ Storage::url($nota->avatar) }}" alt="img" width="100%">
   				<div class="card-body">
   					<p>{{ $nota->descripcion }}</p>
   					<p>{{ $nota->desarrollo }}</p>
@@ -19,6 +20,7 @@
   				</div>
   			</div>
 		</div>
+  <div class="col-md-2"></div>    
 	</div>
 
 	</section>

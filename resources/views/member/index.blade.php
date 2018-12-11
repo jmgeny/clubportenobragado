@@ -21,7 +21,7 @@
 						</div>
 						<div class="form-group">
 							{{-- {{ Form::text('estado',null,['class'=>'form-control','placeholder'=>'estado']) }} --}}
-							{{ Form::select('estado',['1'=> 'Activo', '0'=>'todos' ], null, ['class'=>'form-control', 'placeholder'=> 'Estado']) }}
+							{{ Form::select('estado',['1'=> 'Activo', '0'=>'todos' ], null, ['class'=>'form-control']) }}
 						</div>						
 						<div class="form-group">
 							<button type="submit" class="btn btn-default">
@@ -42,7 +42,7 @@
 			        <th>Apellido</th>
 			        <th>Email</th>
 			        <th>DNI</th>
-			        <th>Estado</th>
+			        {{-- <th>Estado</th> --}}
 			        <th>Ver</th>
 			        <th>Editar</th>
 			        <th>Eliminar</th>
@@ -55,7 +55,7 @@
 				        <td>{{ $member->apellido }}</td>
 				        <td>{{ $member->mail }}</td>
 				        <td>{{ $member->dni }}</td>
-				        <td>{{ $member->estado }}</td>
+				        {{-- <td>{{ $member->estado }}</td> --}}
 				        <td><a href="{{ route('member.show',$member->id) }}" class="btn btn-primary">Ver</a></td>
 				        <td><a href="{{route('member.edit',$member->id) }}" class="btn btn-primary">Edit</a></td>
 				        <td>

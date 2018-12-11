@@ -31,41 +31,11 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
         <div class="my-auto">
           <h2 class="mb-5">Horarios</h2>
-          <table class="table table-striped">
-            <thead class="thead-dark">
-              <th>Lunes</th>
-              <th>Martes</th>
-              <th>Miércoles</th>
-              <th>Jueves</th>
-              <th>Viernes</th>
-              <th>Edad</th>
-            </thead>
-            <tbody>
-              <tr>
-                <td></td>
-                <td>18:30 A 19:30</td>
-                <td></td>
-                <td>18:30 A 19:30</td>
-                <td></td>
-                <td></td>
-                                           
-            </tbody>
-          </table>
+          <h3>Realiza la consulta</h3>
+          @include('contact')
         </div>
       </section>
 
-{{--       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="fotos">
-        <div class="my-auto">
-          <img src="{{ asset('img/fotos.jpg') }}" alt="" class="img-thumbnail">
-          <img src="{{ asset('img/fotos.jpg') }}" alt="" class="img-thumbnail">
-          <img src="{{ asset('img/fotos.jpg') }}" alt="" class="img-thumbnail">
-          <img src="{{ asset('img/fotos.jpg') }}" alt="" class="img-thumbnail">
-          <img src="{{ asset('img/fotos.jpg') }}" alt="" class="img-thumbnail">
-          <img src="{{ asset('img/fotos.jpg') }}" alt="" class="img-thumbnail">
-          <img src="{{ asset('img/fotos.jpg') }}" alt="" class="img-thumbnail">
-          <img src="{{ asset('img/fotos.jpg') }}" alt="" class="img-thumbnail">
-        </div>
-      </section> --}}
-    </div>
+   </div>
     
 @endsection

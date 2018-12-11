@@ -32,32 +32,8 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
         <div class="my-auto">
           <h2 class="mb-5">Horarios</h2>
-          <table class="table">
-            <thead>
-              <th>Lunes</th>
-              <th>Miércoles</th>
-            </thead>
-            <tbody>
-              <td>de 17 a 18 hs</td>
-              <td>de 17 a 18 hs</td>              
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="fotos">
-        <div class="my-auto">
-          <h2 class="mb-5">Fotos</h2>
-          <img src="{{ asset('img/adriana1.jpg') }}" alt="" class="img-thumbnail">
-          <img src="{{ asset('img/adriana2.jpg') }}" alt="" class="img-thumbnail">
-          <img src="{{ asset('img/adriana3.jpg') }}" alt="" class="img-thumbnail">
-          <img src="{{ asset('img/adriana4.jpg') }}" alt="" class="img-thumbnail">
-          <img src="{{ asset('img/adriana5.jpg') }}" alt="" class="img-thumbnail">
-          <img src="{{ asset('img/adriana6.jpg') }}" alt="" class="img-thumbnail">          
-          <img src="{{ asset('img/adriana7.jpg') }}" alt="" class="img-thumbnail">
-          <img src="{{ asset('img/adriana8.jpg') }}" alt="" class="img-thumbnail">
-        </div>
-      </section>
+          <h3>Realiza la consulta</h3>
+          @include('contact')
     </div>
     
 @endsection

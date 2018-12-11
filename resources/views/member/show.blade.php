@@ -4,6 +4,7 @@
 
 @section('content')
 <section class="container">
+	<a href="{{route('member.index') }}" class="btn btn-primary">Listar</a>
 <div class="card">
 	<div class="row">
 <div class="col-md-4">
@@ -28,8 +29,14 @@
 							<p>{{ ($sport->nombre) }}</p>
 						@endforeach
 				</div>
-			</div>	
-		<p class="card-text"><strong>Activo:</strong>{{ $member->estado }} </p>		
+			</div>
+
+			@if ($member->estado)
+				<p>Activo</p>
+			@else
+				<p>Inactivo</p>
+			@endif	
+		{{-- <p class="card-text"><strong>Activo:</strong>{{ $member->estado }} </p>	 --}}	
 	    <a href="{{route('member.edit',$member->id) }}" class="btn btn-primary">Editar</a>
 </div>	
 </div>

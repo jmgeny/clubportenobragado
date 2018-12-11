@@ -19,6 +19,9 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#awards">Horarios</a>
           </li>
+          <li class="nav-item">
+            <a href="https://www.facebook.com/pg/club.porteno.bragado/photos/?tab=albums" target="new" class="nav-link js-scroll-trigger">Fotos</a>
+          </li>
         </ul>
       </div>
     </nav>
