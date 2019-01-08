@@ -2,7 +2,7 @@
 
 @section('title','Patin')
 
-@section('logo','img/iconos/patin.png')
+{{-- @section('logo','img/iconos/patin.png') --}}
 
 @section('content')
 
@@ -13,6 +13,7 @@
     <div class="container-fluid p-0">
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
+          <img class="rounded pull-right" src="img/iconos/patin.png"  alt="">
           <h1 class="mb-0">Patín</h1>
           <div class="subheading mb-5">Centro de Educacion Fisica (C.E.F) Nº 59
           </div>

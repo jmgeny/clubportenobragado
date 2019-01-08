@@ -4,7 +4,7 @@
 
 @section('content')
 
-@section('logo','img/iconos/tela.png')
+{{-- @section('logo','img/iconos/tela.png') --}}
 
 @include('navdeportes')
 
@@ -13,6 +13,7 @@
     <div class="container-fluid p-0">
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
+          <img class="rounded pull-right" src="img/iconos/tela.png"  alt="">
           <h1 class="mb-0">Acrotela</h1>
           <div class="subheading mb-5">Joana Hernandez</div>
           <p class="lead mb-5">En los últimos años, la acrotela o acrobacia en tela se volvió muy popular en el pais y en el mundo. Se trata de una práctica circense de ejercicios aéreos, donde los artistas realizan movimientos coreográficos y acrobáticos suspendidos en una tela. Es una mezcla de danza y deporte que requiere de fuerza y flexibilidad.</p>

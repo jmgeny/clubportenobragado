@@ -4,7 +4,7 @@
 
 @section('content')
 
-@section('logo','img/iconos/adaptado.png')
+{{-- @section('logo','img/iconos/adaptado.png') --}}
 
 @include('navdeportes')
 
@@ -13,6 +13,7 @@
     <div class="container-fluid p-0">
       <section class="resume-section p-7 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
+          <img class="rounded pull-right" src="img/iconos/adaptado.png"  alt="">
           <h2 class="mb-0">Escuela de Iniciación Deportiva Adaptada</h2>
           <div class="subheading mb-5">Adrana Girollet y Gullermina Ossola
             {{-- <a href="mailto:name@email.com">name@email.com</a> --}}

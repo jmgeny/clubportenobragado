@@ -4,7 +4,7 @@
 
 @section('content')
 
-@section('logo','img/iconos/eventos.png')
+{{-- @section('logo','img/iconos/eventos.png') --}}
 
 @include('navdeportes')
 
@@ -13,6 +13,7 @@
     <div class="container-fluid p-0">
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
+          <img class="rounded pull-right" src="img/iconos/eventos.png"  alt="">
           <h1 class="mb-0">Espacio Porteño</h1>
           <div class="subheading mb-5">EL ESPACIO PARA SU PRÓXIMO EVENTO
           </div>

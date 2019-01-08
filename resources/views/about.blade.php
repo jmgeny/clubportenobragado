@@ -26,7 +26,7 @@
             </div>
           </div>
         </div>
-            <div class="row">
+    <div class="row">
         <div class="col-md-2 col-sm-4 mb-4">
           <a href="#">
             <img class="img-fluid" src="{{ asset('/img/sponsor/logo-atos.png') }}" alt="">

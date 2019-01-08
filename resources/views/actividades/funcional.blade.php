@@ -4,7 +4,7 @@
 
 @section('content')
 
-@section('logo','img/iconos/funcional.png')
+{{-- @section('logo','img/iconos/funcional.png') --}}
 
 @include('navdeportes')
 
@@ -13,6 +13,7 @@
     <div class="container-fluid p-0">
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
+          <img class="rounded pull-right" src="img/iconos/funcional.png"  alt="">
           <h1 class="mb-0">Funcional</h1>
           <div class="subheading mb-5">Joana Hernandez</div>
           <p class="lead mb-5">El concepto de entrenamiento funcional (functional training) ha recibido mucha atención en los últimos años. Algunos deportistas de élite y algunos famosos que hacen deporte pregonan sus magníficos resultados. Pero por otro lado, aunque muchos entrenadores personales o preparadores físicos se publicitan como expertos en entrenamiento funcional (functional trainers), en ocasiones pasan por alto los puntos clave en la aplicación efectiva de esta metodología que ya tiene bastantes años de existencia.</p>
