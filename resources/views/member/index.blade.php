@@ -33,13 +33,15 @@
 
 			</div>
 		</div>
-
+		<div>
+			<a class="btn btn-primary" href="{{route('member.create') }}">Nuevo</a>
+		</div>
 		<div class="m-5">
 			<table class="table table-bordered">
 			    <thead>
 			      <tr>
-			        <th>Nombre</th>
 			        <th>Apellido</th>
+			        <th>Nombre</th>
 			        <th>Email</th>
 			        <th>DNI</th>
 			        {{-- <th>Estado</th> --}}
@@ -51,15 +53,17 @@
 				<tbody>
 			    	@foreach($members as $member)
 				      <tr>
-				        <td>{{ $member->nombre }}</td>
 				        <td>{{ $member->apellido }}</td>
+				        <td>{{ $member->nombre }}</td>
 				        <td>{{ $member->mail }}</td>
 				        <td>{{ $member->dni }}</td>
 				        {{-- <td>{{ $member->estado }}</td> --}}
 				        <td><a href="{{ route('member.show',$member->id) }}" class="btn btn-primary">Ver</a></td>
 				        <td><a href="{{route('member.edit',$member->id) }}" class="btn btn-primary">Edit</a></td>
 				        <td>
-			        		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-delete-{{ $member->id }}">Eliminar</button>
+				        	@if($member->estado === 1)
+			        			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-delete-{{ $member->id }}">Eliminar</button>
+			        		@endif	
 				        </td> 
 				      </tr>
 				      @include('member.modal')

@@ -4,8 +4,8 @@
         <h3 class="mb-5">
           <em>Club Social y Derortivo Porteño</em>
         </h3>
-        {{-- <a class="btn btn-primary btn-xl js-scroll-trigger" href="https://www.facebook.com/club.porteno.bragado" target="new">Facebook</a> --}}
         @include('redes')
+        <p>#inclusion #clubporteñobragado #salud #clubdebarrio #bragado</p>
       </div>
       <div class="overlay"></div>
     </header>

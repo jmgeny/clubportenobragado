@@ -18,9 +18,12 @@
         <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#about">El club</a>
         </li>
+        @auth
         <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="{{ route('admin') }}">Administrar</a>
-        </li>        
+        </li>
+        @endauth
+        
         <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#contact">Contacto</a>
         </li>

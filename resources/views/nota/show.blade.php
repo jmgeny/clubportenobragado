@@ -13,7 +13,7 @@
           <img src="{{ Storage::url($nota->avatar) }}" alt="img" width="100%">
   				<div class="card-body">
   					<p>{{ $nota->descripcion }}</p>
-  					<p>{{ $nota->desarrollo }}</p>
+  					<pre>{{ $nota->desarrollo }}</pre>
   				</div> 
   				<div class="card-footer">{{ $nota->fecha }}
   					<a href="{{ route('nota.edit', $nota->id) }}" class="btn btn-primary pull-right">Editar</a>

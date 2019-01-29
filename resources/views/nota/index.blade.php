@@ -10,14 +10,15 @@
 		<div class="col-md-4">
 			<div class="card">
   				<div class="card-header">{{ $nota->titulo }}
-  					<a href="{{ route('nota.show', $nota->id) }}" class="btn btn-primary pull-right">Ver</a>
+  					
 					<img src="{{ Storage::url($nota->avatar) }}" alt="img" width="100%">
   				</div>
   				<div class="card-body">
-  					<p>{{ $nota->descripcion }}</p>
+  					<pre>{{ $nota->descripcion }}</pre>
   					{{-- <p>{{ $nota->desarrollo }}</p> --}}
   				</div> 
   				<div class="card-footer">{{ $nota->fecha }}
+  					<a href="{{ route('nota.show', $nota->id) }}" class="btn btn-primary pull-right">Ver</a>
   				</div>
   			</div>
 		</div>

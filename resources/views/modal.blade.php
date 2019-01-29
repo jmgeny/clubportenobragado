@@ -9,7 +9,7 @@
         {{-- <img src="{{ Storage::url($nota->avatar) }}" alt="" width="100%"> --}}
       </div>
       <div class="modal-body">
-        {{ $nota->desarrollo }}
+        <p>{{ $nota->desarrollo }}</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>

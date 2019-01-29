@@ -21,8 +21,13 @@ Auth::routes();
 
 Route::get('/admin', 'HomeController@index')->name('admin');
 
-Route::resource('admin/member','MemberController');
-Route::resource('admin/nota','NotaController');
+Route::middleware('auth')->group(function(){
+	Route::resource('admin/nota','NotaController');
+	Route::resource('admin/member','MemberController');
+	Route::resource('admin/deportesocio','DeproteMemberController');
+});
+
+
 
 // Route::resource('activity','MemberSportController');
 
@@ -37,3 +42,6 @@ Route::get('eventos','ActividadController@eventos');
 Route::get('taekwondo','ActividadController@taekwondo');
 
 Route::post('send','mailController@send');
+
+
+// Route::get('members_sports/{id}','SportUserController@index');

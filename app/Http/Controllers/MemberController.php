@@ -27,7 +27,7 @@ class MemberController extends Controller
                     ->apell($apell)
                     ->mail($mail)
                     ->estado($estado)
-                    ->paginate('7');
+                    ->paginate('20');
 
         return view('member.index',compact('members'));
     }
@@ -93,7 +93,7 @@ class MemberController extends Controller
      */
     public function show($id)
     {
-        $member = Member::find($id);
+        $member = Member::findOrFail($id);
 
         return view('member.show',compact('member'));
     }
@@ -106,7 +106,7 @@ class MemberController extends Controller
      */
     public function edit($id)
     {
-        $member = Member::find($id);
+        $member = Member::findOrFail($id);
 
         return view('member.edit',compact('member'));
     }
