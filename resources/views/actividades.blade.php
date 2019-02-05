@@ -4,6 +4,7 @@
           <h2 class="mb-5">¿Que puedo hacer en el club?</h2>
         </div>
         <div class="row">
+
           <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
             <a href="{{ url('patin') }}">
               <span class="service-icon rounded-circle mx-auto mb-3">
@@ -103,36 +104,6 @@
             </h4>
           </div>           
 
-
         </div>
       </div>
     </section>
-{{--           <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-pencil"></i>
-            </span>
-            <h4>
-              <strong>Patin</strong>
-            </h4>
-            <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-like"></i>
-            </span>
-            <h4>
-              <strong>Tela</strong>
-            </h4>
-            <p class="text-faded mb-0">Millions of users
-              <i class="fa fa-heart"></i>
-              Start Bootstrap!</p>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-mustache"></i>
-            </span>
-            <h4>
-              <strong>Futsal</strong>
-            </h4>
-            <p class="text-faded mb-0">I mustache you a question...</p>
-          </div> --}}

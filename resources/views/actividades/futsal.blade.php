@@ -4,8 +4,6 @@
 
 @section('content')
 
-{{-- @section('logo','img/iconos/futsal.png') --}}
-
 @include('navdeportes')
 
 @include('actividades.navbar')

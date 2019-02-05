@@ -4,8 +4,6 @@
 
 @section('content')
 
-{{-- @section('logo','img/iconos/taekwondo.png') --}}
-
 @include('navdeportes')
 
 @include('actividades.navbar')

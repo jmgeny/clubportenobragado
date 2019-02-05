@@ -4,9 +4,10 @@
 
 <section class="container" style="background-color: red">
 	
-@foreach($members as $socio)
+	@foreach($members as $socio)
 	{{ $socio->nombre }}
-@endforeach	
+	@endforeach	
+	
 </section>
 
 @endsection

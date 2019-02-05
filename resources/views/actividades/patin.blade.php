@@ -2,8 +2,6 @@
 
 @section('title','Patin')
 
-{{-- @section('logo','img/iconos/patin.png') --}}
-
 @section('content')
 
 @include('navdeportes')

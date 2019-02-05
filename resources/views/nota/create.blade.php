@@ -1,7 +1,5 @@
 @extends('layouts.admin')
 
-@section('title','Edit Notas')
-
 @section('content')
 <section class="container">
 	<h3>Crear Nota

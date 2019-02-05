@@ -1,7 +1,5 @@
 @extends('layouts.admin')
 
-@section('title','Ver Notas')
-
 @section('content')
 	<section class="container">
 		<h1>Nota: {{ $nota->titulo }}<a href="{{ url('admin/nota') }}" class="btn btn-primary pull-right">Listado</a></h1>

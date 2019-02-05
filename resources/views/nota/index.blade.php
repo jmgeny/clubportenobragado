@@ -1,7 +1,5 @@
 @extends('layouts.admin')
 
-@section('title','Notas')
-
 @section('content')
 	<section class="container">
 		<h1>Notas<a class="btn btn-primary pull-right" href="{{route('nota.create') }}">Crear</a></h1>

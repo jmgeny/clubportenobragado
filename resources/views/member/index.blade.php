@@ -1,7 +1,5 @@
 @extends('layouts.admin')
 
-@section('title','Index')
-
 @section('content')
 	<section class="container">
 

@@ -1,7 +1,5 @@
 @extends('layouts.admin')
 
-@section('title','Create')
-
 @section('content')
 	<section class="container">
 		<a href="{{route('member.index') }}" class="btn btn-primary">Listar</a>
