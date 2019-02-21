@@ -43,18 +43,17 @@
     {!! Form::select('city_id',\Porteno\City::orderBy('nombre')->pluck('nombre','id'),null, ['class'=> 'form-control']) !!}
   </div>
 
-  <div class="form-group">
+{{--   <div class="form-group">
     {!! Form::label('sports','Deportes:') !!}
- <div class="foreach">
-            @foreach($member->sports as $sport)
-              <div class="foreach">
-                {{ ($sport->nombre) }} 
-              </div>
-            @endforeach
-            </div>
-
+    <div class="foreach">
+      @foreach($member->sports as $sport)
+      <div class="foreach">
+        {{ ($sport->nombre) }} 
+      </div>
+      @endforeach
+    </div>
     <a href="{{ route('deportesocio.show',$member->id) }}" class="btn btn-primary">Actualizar Deporte</a>
-  </div>  
+  </div>  --}} 
 
   <div class="form-group">
     {!! Form::label('avatar', 'Foto') !!}

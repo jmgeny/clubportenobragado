@@ -13,8 +13,7 @@
         <div class="my-auto">
           <img class="rounded pull-right" src="img/iconos/futsal.png"  alt="">
           <h1 class="mb-0">Futsal</h1>
-          <div class="subheading mb-5">Fransisco Morales
-          </div>
+          <div class="subheading mb-5"></div>
           <p class="lead mb-5">De todos es bien sabido, que el deporte en todas sus variantes es bueno para nuestros pequeños. Queremos lo mejor para ellos, y una manera de fomentar su desarrollo físico, su coordinación, capacidad de aprendizaje entre otras es el Futsal.</p>
         </div>
       </section>
@@ -36,7 +35,6 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
         <div class="my-auto">
-          <h2 class="mb-5">Horarios</h2>
           <h3>Realiza la consulta</h3>
           @include('contact')
         </div>

@@ -24,9 +24,11 @@ class CreateMembersTable extends Migration
             $table->string('address')->nullable();
             $table->unsignedInteger('city_id');          
             $table->string('phone')->nullable();
-            $table->string('avatar')->default('default.gif');
+            $table->string('avatar')->default('image/img_avatar.png');
             $table->boolean('estado');
             $table->timestamps();
+
+            $table->foreign('city_id')->references('id')->on('cities');
         });
     }
 

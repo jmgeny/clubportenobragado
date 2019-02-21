@@ -29,7 +29,6 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
         <div class="my-auto">
-          <h2 class="mb-5">Horarios</h2>
           <h3>Realiza la consulta</h3>
           @include('contact')
         </div>
