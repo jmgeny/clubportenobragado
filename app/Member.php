@@ -7,7 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Member extends Model
 {
     protected $fillable = [
-        'nombre', 'apellido', 'mail', 
+        'nombre', 'apellido', 'mail', 'dni', 'nacimiento', 'ingreso','address','city_id','phone', 'estado',
+        //'avatar',
     ];
 
         public function sports()

@@ -60,7 +60,9 @@
 				        <td><a href="{{route('member.edit',$member->id) }}" class="btn btn-primary">Edit</a></td>
 				        <td>
 				        	@if($member->estado === 1)
-			        			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-delete-{{ $member->id }}">Eliminar</button>
+			        			<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal-delete-{{ $member->id }}">Eliminar</button>
+			        		@else
+			        			<button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-delete-{{ $member->id }}">Activar</button>
 			        		@endif	
 				        </td> 
 				      </tr>

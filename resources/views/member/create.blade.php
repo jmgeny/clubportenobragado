@@ -5,7 +5,7 @@
 		<a href="{{route('member.index') }}" class="btn btn-primary">Listar</a>
 		<h2>Create Member</h2>
 		{!! Form::open(['route'=>'member.store','files'=>'true']) !!}
-		@include('member.form')
+		@include('member.parcial.form')
 		{!! Form::close() !!}
 	</section>
 

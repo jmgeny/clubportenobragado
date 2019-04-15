@@ -50,36 +50,7 @@ class MemberController extends Controller
      */
     public function store(Request $request)
     {
-        $socio = new Member;
-        $socio->nombre   = $request->nombre;
-        $socio->apellido = $request->apellido;
-        $socio->dni     = $request->dni;
-        $socio->phone     = $request->phone;        
-        $socio->nacimiento     = $request->nacimiento;
-        $socio->ingreso     = $request->ingreso;
-        $socio->address     = $request->address;
-        $socio->city_id     = $request->city_id;
-        $socio->estado     = $request->estado;
-        $socio->mail     = $request->mail;
-
-//imagen
-        if($request->file('avatar')) {
-
-            // Necesito el archivo en una variable esta vez
-            $file = $request->file("avatar");
-            // Armo un nombre único para este archivo
-            $name = $request->apellido . $request->nombre . "." . $file->extension();
-            // carpeta en la que voy a guardar la imagen
-            $folder = "image";
-
-            $path = $file->storeAs($folder, $name);
-            $socio->avatar = $path;
-        }          
-
-        $socio->save();
-
-        // $member = Member::findOrFail($request->$socio->id);
-        $socio->sports()->attach($request->sport_id);        
+        $member = Member::create($request);
 
         return redirect()->route('member.index')
                          ->with('info','El Socio fue creado');
@@ -107,7 +78,6 @@ class MemberController extends Controller
     public function edit($id)
     {
         $member = Member::findOrFail($id);
-
         return view('member.edit',compact('member'));
     }
 
@@ -120,35 +90,9 @@ class MemberController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $member = Member::find($id);
+        $member = Member::findOrFail($id);
 
-        $member->nombre     = $request->nombre;
-        $member->apellido   = $request->apellido;
-        $member->mail       = $request->mail;
-        $member->dni        = $request->dni;
-        $member->phone      = $request->phone;
-        $member->nacimiento = $request->nacimiento;
-        $member->ingreso    = $request->ingreso;
-        $member->address    = $request->address;
-        $member->city_id    = $request->city_id;
-        $member->estado     = $request->estado;
-
-//imagen
-        if($request->file('avatar')) {
-
-            // Necesito el archivo en una variable esta vez
-            $file = $request->file("avatar");
-            // Armo un nombre único para este archivo
-            $name = $request->apellido . $request->nombre . "." . $file->extension();
-            // carpeta en la que voy a guardar la imagen
-            $folder = "avatars";
-
-            $path = $file->storeAs($folder, $name);
-            $member->avatar = $path;
-        }         
-
-        $member->save();
-
+        $member->update($request->all());
         return redirect()->route('member.index')
                          ->with('info','El Socio fue actualizado');
     }
@@ -162,7 +106,12 @@ class MemberController extends Controller
     public function destroy($id)
     {
         $socio = Member::findOrFail($id);
-        $socio->estado='0';
+
+        if($socio->estado === 1)
+          $socio->estado='0';
+          else 
+          $socio->estado='1';        
+        
         $socio->update();
         
         return back();  

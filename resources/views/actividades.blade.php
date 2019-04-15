@@ -5,8 +5,8 @@
         </div>
         <div class="row">
 
-          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-            <a href="{{ url('patin') }}">
+           <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <a href="#" data-toggle="modal" data-target="#patinModal">
               <span class="service-icon rounded-circle mx-auto mb-3">
                 <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/iconos/patin.png" alt="">
               </span>
@@ -14,10 +14,22 @@
             <h4>
               <strong>Patin</strong>
             </h4>
-          </div>                              
+          </div>
 
           <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-            <a href="{{ url('funcional') }}">
+            <a href="#" data-toggle="modal" data-target="#gymModal">
+              <span class="service-icon rounded-circle mx-auto mb-3">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/iconos/pesas.png" alt="">
+              </span>
+            </a>
+            <h4>
+              <strong>GYM</strong>
+            </h4>
+          </div>                     
+
+
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <a href="#" data-toggle="modal" data-target="#funcionalModal">
               <span class="service-icon rounded-circle mx-auto mb-3">
                 <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/iconos/funcional.png" alt="">
               </span>
@@ -27,6 +39,29 @@
             </h4>
           </div>                              
 
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <a href="#" data-toggle="modal" data-target="#taekwondoModal">
+              <span class="service-icon rounded-circle mx-auto mb-3">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/iconos/taekwondo.png" alt="">
+              </span>
+            </a>
+            <h4>
+              <strong>Taekwondo</strong>
+            </h4>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <a href="#" data-toggle="modal" data-target="#futsalModal">
+              <span class="service-icon rounded-circle mx-auto mb-3">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/iconos/futsal.png" alt="">
+              </span>
+            </a>
+            <h4>
+              <strong>Futsal</strong>
+            </h4>
+          </div>          
+
+{{--
           <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
             <a href="{{ url('tela') }}">
               <span class="service-icon rounded-circle mx-auto mb-3">
@@ -38,16 +73,7 @@
             </h4>
           </div>                              
 
-          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-            <a href="{{ url('futsal') }}">
-              <span class="service-icon rounded-circle mx-auto mb-3">
-                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/iconos/futsal.png" alt="">
-              </span>
-            </a>
-            <h4>
-              <strong>Futsal</strong>
-            </h4>
-          </div>                              
+                              
 
           <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
             <a href="{{ url('adultos') }}">
@@ -71,27 +97,7 @@
             </h4>
           </div> 
 
-          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-            <a href="{{ url('gym') }}">
-              <span class="service-icon rounded-circle mx-auto mb-3">
-                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/iconos/pesas.png" alt="">
-              </span>
-            </a>
-            <h4>
-              <strong>GYM</strong>
-            </h4>
-          </div>           
-
-          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-            <a href="{{ url('taekwondo') }}">
-              <span class="service-icon rounded-circle mx-auto mb-3">
-                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/iconos/taekwondo.png" alt="">
-              </span>
-            </a>
-            <h4>
-              <strong>Taekwondo</strong>
-            </h4>
-          </div>           
+           
           
           <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
             <a href="{{ url('eventos') }}">
@@ -102,8 +108,14 @@
             <h4>
               <strong>Sociales</strong>
             </h4>
-          </div>           
+          </div>            --}}
 
         </div>
       </div>
     </section>
+
+@include('actividades.patin')
+@include('actividades.gym')
+@include('actividades.funcional')
+@include('actividades.taekwondo')
+@include('actividades.futsal')
