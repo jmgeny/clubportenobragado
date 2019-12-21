@@ -26,7 +26,7 @@
             </div>
           </div>
         </div>
-    <div class="row">
+{{--     <div class="row">
         <div class="col-md-2 col-sm-4 mb-4">
           <a href="http://cad.org.ar/">
             <img class="img-fluid" src="{{ asset('/img/sponsor/cad.png') }}" alt="CAD" title="Confederación Argentina de Deporte">
@@ -36,7 +36,7 @@
           <a href="http://www.triatlon.org.ar">
             <img class="img-fluid" src="{{ asset('/img/sponsor/fat-logo.png') }}" alt="FAT" title="Federación Argentina de Triatlon">
           </a>
-        </div>
+    </div> --}}
 {{--        <div class="col-md-2 col-sm-4 mb-4">
           <a href="#">
             <img class="img-fluid" src="{{ asset('/img/sponsor/logo-cocacola.png') }}" alt="">

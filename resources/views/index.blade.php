@@ -14,8 +14,8 @@
 
     @include('about')
 	
-	<h1 class="text-center">Formulario de Contacto</h1>
-    @include('contact')
+	{{-- <h1 class="text-center">Formulario de Contacto</h1> --}}
+    {{-- @include('contact') --}}
 
     @include('footer')
 

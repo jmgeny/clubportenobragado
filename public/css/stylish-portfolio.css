@@ -372,7 +372,11 @@ a:hover, a:focus, a:active {
 }
 
 .modal-header, .modal-footer {
-  background-color: #D8D8D8;
+  background-color: #28a745;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.10);
 }
 
 .foreach {

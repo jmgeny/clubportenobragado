@@ -2,9 +2,9 @@
    	<div class="container">
    		<div class="row">
    			<div class="col-md-2"></div>
-   			<div class="col-md-8">
+   			<div class="col-md-8 text-center">
    				@include('error')
-   				<form action="send" method="POST">
+{{--    				<form action="send" method="POST">
    					{{ csrf_field() }}
    					<div class="form-group">
    						<label for="nombre">Nombre</label>
@@ -27,10 +27,9 @@
    					</div>
 
    					<button type="submit" class="btn btn-default">Enviar</button>
-   				</form>
-
-   				<div class="col-md-2"></div>
+   				</form> --}}
    			</div>
+   				<div class="col-md-2"></div>
    		</div>
    	</div>
 

@@ -12,9 +12,9 @@
         <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#actividades">Actividades</a>
         </li>
-        <li class="sidebar-nav-item">
+{{--         <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#noticias">Noticias</a>
-        </li>
+        </li> --}}
         <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#about">El club</a>
         </li>
@@ -23,9 +23,8 @@
           <a class="js-scroll-trigger" href="{{ route('admin') }}">Administrar</a>
         </li>
         @endauth
-        
-        <li class="sidebar-nav-item">
+{{--         <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#contact">Contacto</a>
-        </li>
+        </li> --}}
       </ul>
     </nav>

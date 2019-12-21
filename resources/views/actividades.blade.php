@@ -8,7 +8,7 @@
            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
             <a href="#" data-toggle="modal" data-target="#patinModal">
               <span class="service-icon rounded-circle mx-auto mb-3">
-                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/iconos/patin.png" alt="">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{{ asset('img/iconos/patin.png') }}" alt="">
               </span>
             </a>
             <h4>
@@ -19,7 +19,7 @@
           <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
             <a href="#" data-toggle="modal" data-target="#gymModal">
               <span class="service-icon rounded-circle mx-auto mb-3">
-                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/iconos/pesas.png" alt="">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{{ asset('img/iconos/pesas.png') }}" alt="">
               </span>
             </a>
             <h4>
@@ -31,7 +31,7 @@
           <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
             <a href="#" data-toggle="modal" data-target="#funcionalModal">
               <span class="service-icon rounded-circle mx-auto mb-3">
-                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/iconos/funcional.png" alt="">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{{ asset('img/iconos/funcional.png') }}" alt="">
               </span>
             </a>
             <h4>
@@ -39,27 +39,38 @@
             </h4>
           </div>                              
 
-          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+{{--           <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
             <a href="#" data-toggle="modal" data-target="#taekwondoModal">
               <span class="service-icon rounded-circle mx-auto mb-3">
-                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/iconos/taekwondo.png" alt="">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{{ asset('img/iconos/taekwondo.png') }}" alt="">
               </span>
             </a>
             <h4>
               <strong>Taekwondo</strong>
             </h4>
-          </div>
+          </div> --}}
 
           <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
             <a href="#" data-toggle="modal" data-target="#futsalModal">
               <span class="service-icon rounded-circle mx-auto mb-3">
-                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/iconos/futsal.png" alt="">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{{ asset('img/iconos/futsal.png') }}" alt="">
               </span>
             </a>
             <h4>
               <strong>Futsal</strong>
             </h4>
           </div>          
+
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <a href="#" data-toggle="modal" data-target="#futbolModal">
+              <span class="service-icon rounded-circle mx-auto mb-3">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{{ asset('img/iconos/futsal.png') }}" alt="">
+              </span>
+            </a>
+            <h4>
+              <strong>Futbol</strong>
+            </h4>
+          </div>                    
 
 {{--
           <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
@@ -119,3 +130,4 @@
 @include('actividades.funcional')
 @include('actividades.taekwondo')
 @include('actividades.futsal')
+@include('actividades.futbol')
