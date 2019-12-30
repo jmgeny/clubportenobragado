@@ -9,20 +9,20 @@
         </button>
       </div>
       <div class="modal-body">
-<div class="card mb-3">
-  <div class="row no-gutters">
-    <div class="col-md-4">
-      <img src="{{ asset('img/iconos/patin.png') }}" class="card-img" alt="...">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h3 class="card-title">Natalia Araya</h3>
-        <p class="card-text">El patinaje sobre ruedas es una disciplina deportiva de deslizamiento en la que los participantes hacen figuras, saltos, trompos y otros ejercicios técnicos utilizando patines sobre ruedas. Requiere una buena preparación física y una gran capacidad de concentración. Se puede competir en varias categorías: patinaje libre, escuela, patinaje sincronizado, show y, desde principios del siglo XIX, patinaje sobre ruedas en línea (in-line).</p>
-        <p class="card-text"><small class="text-muted">Lunes y Miercoles de 17 a 20hs y Viernes de 18 a 20</small></p>
-      </div>
-    </div>
-  </div>
-</div>        
+        <div class="card mb-3">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="{{ asset('img/iconos/patin.png') }}" class="card-img" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h3 class="card-title">Natalia Araya</h3>
+                <p class="card-text">El patinaje sobre ruedas es una disciplina deportiva de deslizamiento en la que los participantes hacen figuras, saltos, trompos y otros ejercicios técnicos utilizando patines sobre ruedas. Requiere una buena preparación física y una gran capacidad de concentración. Se puede competir en varias categorías: patinaje libre, escuela, patinaje sincronizado, show y, desde principios del siglo XIX, patinaje sobre ruedas en línea (in-line).</p>
+                <p class="card-text"><small class="text-muted">Horario: </small></p>
+              </div>
+            </div>
+          </div>
+        </div>        
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>

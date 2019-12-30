@@ -19,7 +19,7 @@
         <h3 class="card-title">Gustavo Sarroca</h3>
         <p class="card-text">Amor y vocación Profesional, simplicidad y continuo contacto con el socio forman parte de nuestro ADN.<br>
         Es momento de recuperar valores pasados, el club Porteño marca un espacio de diseño único para cuidarte y sentirse bien, el mismo se encuentra ubicado en el Barrio de la Estación, lugar pintoresco y legendario por su historia en el crecimiento de la Ciudad de Bragado.</p>
-        <p class="card-text"><small class="text-muted">Lunes a viernes de 9 a 21hs</small></p>
+        <p class="card-text"><small class="text-muted">Horario: </small></p>
       </div>
     </div>
   </div>

@@ -18,7 +18,7 @@
       <div class="card-body">
         <h5 class="card-title">Joana Hernandez</h5>
         <p class="card-text">El entrenamiento funcional es el uso de los ejercicios que implican movimientos complejos y multi-articulares del tren superior, el tren inferior y core en cada ejercicio. Estos movimientos permiten un mayor funcionamiento global del cuerpo y una mejora del rendimiento a través de una mejor coordinación y una adecuada estimulación de los patrones musculares del día a día. El entrenamiento funcional es más que un mero entrenamiento del cuerpo para los movimientos de la “vida”, es preparar al cuerpo para ser capaz de reaccionar y funcionar mejor y de manera más eficaz en cualquier entorno o situación.</p>
-        <p class="card-text"><small class="text-muted">Horarios</small></p>
+        <p class="card-text"><small class="text-muted">Horario: </small></p>
       </div>
     </div>
   </div>

@@ -13,6 +13,8 @@
     @include('noticias')
 
     @include('about')
+
+    @include('sponsor')
 	
 	{{-- <h1 class="text-center">Formulario de Contacto</h1> --}}
     {{-- @include('contact') --}}

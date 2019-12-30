@@ -70,57 +70,7 @@
             <h4>
               <strong>Futbol</strong>
             </h4>
-          </div>                    
-
-{{--
-          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-            <a href="{{ url('tela') }}">
-              <span class="service-icon rounded-circle mx-auto mb-3">
-                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/iconos/tela.png" alt="">
-              </span>
-            </a>
-            <h4>
-              <strong>Tela</strong>
-            </h4>
-          </div>                              
-
-                              
-
-          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-            <a href="{{ url('adultos') }}">
-              <span class="service-icon rounded-circle mx-auto mb-3">
-                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/iconos/adultos.png" alt="">
-              </span>
-            </a>
-            <h4>
-              <strong>Adultos</strong>
-            </h4>
-          </div> 
-
-          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-            <a href="{{ url('especial') }}">
-              <span class="service-icon rounded-circle mx-auto mb-3">
-                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/iconos/adaptado.png" alt="">
-              </span>
-            </a>
-            <h4>
-              <strong>Adaptado</strong>
-            </h4>
-          </div> 
-
-           
-          
-          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-            <a href="{{ url('eventos') }}">
-              <span class="service-icon rounded-circle mx-auto mb-3">
-                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/iconos/eventos.png" alt="">
-              </span>
-            </a>
-            <h4>
-              <strong>Sociales</strong>
-            </h4>
-          </div>            --}}
-
+          </div>               
         </div>
       </div>
     </section>

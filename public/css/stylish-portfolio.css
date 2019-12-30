@@ -371,8 +371,8 @@ a:hover, a:focus, a:active {
   color: #ecb807 !important;
 }
 
-.modal-header, .modal-footer {
-  background-color: #28a745;
+.modal-header {
+  background-color: #f0fff0;
 }
 
 footer {

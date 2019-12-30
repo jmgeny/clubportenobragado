@@ -18,7 +18,7 @@
               <div class="card-body">
                 <h3 class="card-title">Federico Lema</h3>
                 <p class="card-text">El fútbol-sala, satisface la necesidad de movimiento, cuando un niño da una patada a una pelota y corre detrás de ella, satisface su necesidad natural de movimiento corriendo, saltando y chutando. Satisface la necesidad de juego, estimulando el instinto de juego que caracteriza al ser humano. Aporta beneficios fisiológicos, en los sistemas cardiovasculares, músculo-esquelético y metabólicos. Aporta beneficios psicológicos, disminución de tensión, de síntomas de angustia, de síntomas depresivos y mejora los patrones del sueño. Aporta beneficios en el plano social, como deporte colectivo, favorece el asociacionismo, haciendo que la persona aprenda a relacionarse con su entorno.</p>
-                <p class="card-text"><small class="text-muted">Futsal Para Niñes</small></p>
+                <p class="card-text"><small class="text-muted">Horario: </small></p>
               </div>
             </div>
           </div>
